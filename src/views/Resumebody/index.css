@@ -1,0 +1,286 @@
+.intro {
+  background: #16396a;
+  margin-top: 87px;
+}
+
+.holder {
+  padding: 20px 0px 0px 0px;
+}
+
+.intro-holder1 {
+  /* border: solid; */
+  position: relative;
+}
+
+.intro-img {
+  /* border: solid red; */
+  text-align: end;
+  /* position: relative; */
+}
+
+.intro-text {
+  background: #3aafc9;
+  color: white;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: relative;
+  position: absolute;
+  left: 70px;
+  top: 50px;
+}
+
+.intro-text h1 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  transform-origin: 0 0;
+  transform: rotate(10deg);
+  position: absolute;
+  right: 35px;
+  top: 50px;
+}
+
+.intro-text h2 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  transform-origin: 0 0;
+  transform: rotate(10deg);
+  position: absolute;
+  right: 20px;
+  bottom: 50px;
+}
+
+.intro-name h1 {
+  max-width: 479px;
+  font-weight: 900;
+  font-size: 65px;
+  color: #fff;
+  line-height: 75px;
+  position: absolute;
+  bottom: 110px;
+  left: 80px;
+}
+
+.intro-icon {
+  position: absolute;
+  padding: 0;
+  bottom: 50px;
+  left: -50px;
+}
+.intro-icon li {
+  list-style: none;
+  font-size: 20px;
+  color: #ccd6f6;
+}
+.intro-icon li a {
+  color: #ccd6f6;
+}
+
+.funthing {
+  margin: 130px 0px 0px 0px;
+  padding: 20px;
+}
+
+.funthing h3 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ccd6f6;
+  margin: 0px 0px 5px 0px;
+}
+
+.funthing p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #a3abc2;
+  max-width: 261px;
+}
+
+.getintouch-btn {
+  max-width: 130px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  border: 2px solid#F7D41B;
+  padding: 10px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+}
+.getintouch-btn a {
+  color: #f7d41b;
+}
+
+.about h1 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  color: #ccd6f6;
+}
+
+
+.about p {
+  max-width: 588px;
+  line-height: 24px;
+  color: #a3abc2;
+  font-size: 18px;
+}
+
+
+/* PROJECTS SECTION */
+.projects{
+  width: 100%;
+  min-height: 100px;
+  padding: 20px 0;
+}
+
+.project-slide {
+  position: relative;
+  max-width: 90%;
+  margin: 0 10px;
+  border: solid;
+  padding: 20px;
+}
+.projects .even {
+  margin-top: 70px;
+}
+.projects .even-1 {
+  margin-top: 40px;
+}
+
+.somethings-I-built-icon a {
+  color: #ccd6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  padding: 7px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.somethings-I-built-icon i {
+  font-size: 18px;
+}
+
+.project-slide h1 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+}
+
+.project-slide p {
+  max-width: 246px;
+}
+
+.projects .slick-prev {
+left: 1100px !important;
+top: 480px !important;
+}
+
+.projects .slick-next {
+right: 20px !important;
+top: 480px !important;
+}
+
+.projects .slick-prev:before,
+.projects .slick-next:before {
+color: #ccd6f6;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.medium h2 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.medium h1 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+}
+.medium-highlight {
+  border-bottom: 0.5px solid #667399;
+  padding: 20px 0px;
+}
+.medium-icon {
+  transform: rotate(50deg);
+}
+
+.contact {
+  /* border: solid; */
+  padding: 15rem 0px;
+}
+
+.contact h1 {
+  max-width: 554px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  margin: auto;
+}
+
+.contact p {
+  font-size: 20px;
+  line-height: 30px;
+  color: #a3abc2;
+}
+.contact a {
+  color: #f7d41b;
+}
+
+.footer {
+  padding: 0px 0px 50px 0px;
+}
+
+.footer h1 {
+  font-size: 20px;
+  line-height: 30px;
+}
+@media only screen and (max-width: 1024px) {
+  #top{
+    width:100%;
+  overflow-x: hidden;
+  display: block;
+  }
+  .intro-img {
+    text-align: start;
+  }
+  .intro-text {
+    background: #3aafc9;
+    width: 80px;
+    height: 80px;
+    left: 25px;
+    top: 10px;
+  }
+  .intro-text h1 {
+    font-size: 12px;
+    right: 12px;
+    top: 15px;
+  }
+
+  .intro-text h2 {
+    font-size: 12px;
+    right: 5px;
+    bottom: 25px;
+  }
+  .intro-name h1 {
+    font-size: 35px;
+    line-height: 40px;
+    bottom: 50px;
+    left: 50px;
+  }
+  .intro-icon {
+    bottom: 130px;
+    left: -20px;
+  }
+  .intro-icon li {
+    font-size: 14px;
+  }
+  .intro {
+    margin-top: 77px;
+  }
+}
