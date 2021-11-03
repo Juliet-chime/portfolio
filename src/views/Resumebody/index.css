@@ -214,6 +214,17 @@ color: #ccd6f6;
   transform: rotate(50deg);
 }
 
+.article{
+  color: #A3ABC2;
+}
+
+.article:hover {
+  text-decoration: none;
+  cursor: pointer;
+  text-shadow: none !important;
+  color: white;
+}
+
 .contact {
   /* border: solid; */
   padding: 15rem 0px;

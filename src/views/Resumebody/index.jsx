@@ -10,7 +10,7 @@ import "slick-carousel/slick/slick-theme.css";
 import ellipseII from "../../assets/img/Ellipse-21.png";
 
 const Resume = () => {
-  const [words,setWords] = useState(["I’ m a Frontend developer based in Lagos."]);
+  const words = ["I’ m a Frontend developer based in Lagos."];
   const [index, setIndex] = useState(0);
   const [subIndex, setSubIndex] = useState(0);
   const [blink, setBlink] = useState(true);
@@ -45,7 +45,7 @@ const Resume = () => {
       setBlink((prev) => !prev);
     }, 500);
     return () => clearTimeout(timeout2);
-  }, [blink]);
+  }, [blink,words]);
 
   const settings = {
     dots: false,
@@ -204,15 +204,16 @@ const Resume = () => {
                   <div className="project-slide even">
                     <div className="d-flex justify-content-end">
                       <div className="somethings-I-built-icon">
-                        <a href="#">
+                        {/* dummy link */}
+                        <a href="https://github.com/Juliet-chime">
                           <i class="fa fa-github"></i>
                         </a>
                       </div>
-                      <div className="somethings-I-built-icon">
+                      {/* <div className="somethings-I-built-icon">
                         <a href="#">
                           <i class="fa fa-edit"></i>
                         </a>
-                      </div>
+                      </div> */}
                     </div>
                     <br />
                     <br />
@@ -237,11 +238,11 @@ const Resume = () => {
                           <i class="fa fa-github"></i>
                         </a>
                       </div>
-                      <div className="somethings-I-built-icon">
+                      {/* <div className="somethings-I-built-icon">
                         <a href="#">
                           <i class="fa fa-edit"></i>
                         </a>
-                      </div>
+                      </div> */}
                     </div>
                     <br />
                     <br />
@@ -265,11 +266,11 @@ const Resume = () => {
                           <i class="fa fa-github"></i>
                         </a>
                       </div>
-                      <div className="somethings-I-built-icon">
+                      {/* <div className="somethings-I-built-icon">
                         <a href="#">
                           <i class="fa fa-edit"></i>
                         </a>
-                      </div>
+                      </div> */}
                     </div>
                     <br />
                     <br />
@@ -288,16 +289,17 @@ const Resume = () => {
                   <div className="project-slide">
                     <div className="d-flex justify-content-end">
                       <div className="somethings-I-built-icon">
-                        <a href="#">
+                        {/* dummy link here */}
+                        <a href="https://github.com/Juliet-chime">
                           {" "}
                           <i class="fa fa-github"></i>
                         </a>
                       </div>
-                      <div className="somethings-I-built-icon">
+                      {/* <div className="somethings-I-built-icon">
                         <a href="#">
                           <i class="fa fa-edit"></i>
                         </a>
-                      </div>
+                      </div> */}
                     </div>
                     <br />
                     <br />
@@ -334,14 +336,15 @@ const Resume = () => {
           </div>
           <br />
 
-          <div className="row medium-highlight">
+         <a href="https://www.educative.io/edpresso/how-to-set-up-tailwind-in-react" className="article">
+         <div className="row medium-highlight">
             <div className="col-sm-12 col-md-2">
-              <p style={{ fontSize: "14px" }}>20th Jan</p>
+              <p style={{ fontSize: "14px" }}>30th Sep</p>
             </div>
             <div className="col-sm-12 col-md-7">
               <h2 style={{ fontSize: "20px", fontWeight: "600" }}>
                 <img src={ellipseII} alt="" />
-                &nbsp; How do you use time tracking for projects?
+                &nbsp; How to set up Tailwind in React
               </h2>
             </div>
             <div className="col-sm-12 col-md-3">
@@ -351,15 +354,17 @@ const Resume = () => {
               </div>
             </div>
           </div>
+         </a>
 
-          <div className="row medium-highlight">
+         <a href="https://www.educative.io/edpresso/how-to-set-up-tailwind-in-react" className="article">
+         <div className="row medium-highlight">
             <div className="col-sm-12 col-md-2">
-              <p style={{ fontSize: "14px" }}>20th Jan</p>
+              <p style={{ fontSize: "14px" }}>30th Sep</p>
             </div>
             <div className="col-sm-12 col-md-7">
               <h2 style={{ fontSize: "20px", fontWeight: "600" }}>
                 <img src={ellipseII} alt="" />
-                &nbsp; How do you use time tracking for projects?
+                &nbsp; How to set up Tailwind in React
               </h2>
             </div>
             <div className="col-sm-12 col-md-3">
@@ -369,15 +374,17 @@ const Resume = () => {
               </div>
             </div>
           </div>
+         </a>
 
-          <div className="row medium-highlight">
+         <a href="https://www.educative.io/edpresso/how-to-set-up-tailwind-in-react" className="article">
+         <div className="row medium-highlight">
             <div className="col-sm-12 col-md-2">
-              <p style={{ fontSize: "14px" }}>20th Jan</p>
+              <p style={{ fontSize: "14px" }}>30th Sep</p>
             </div>
             <div className="col-sm-12 col-md-7">
               <h2 style={{ fontSize: "20px", fontWeight: "600" }}>
                 <img src={ellipseII} alt="" />
-                &nbsp; How do you use time tracking for projects?
+                &nbsp; How to set up Tailwind in React
               </h2>
             </div>
             <div className="col-sm-12 col-md-3">
@@ -387,15 +394,17 @@ const Resume = () => {
               </div>
             </div>
           </div>
+         </a>
 
-          <div className="row medium-highlight">
+         <a href="https://www.educative.io/edpresso/how-to-set-up-tailwind-in-react" className="article">
+         <div className="row medium-highlight">
             <div className="col-sm-12 col-md-2">
-              <p style={{ fontSize: "14px" }}>20th Jan</p>
+              <p style={{ fontSize: "14px" }}>30th Sep</p>
             </div>
             <div className="col-sm-12 col-md-7">
               <h2 style={{ fontSize: "20px", fontWeight: "600" }}>
                 <img src={ellipseII} alt="" />
-                &nbsp; How do you use time tracking for projects?
+                &nbsp; How to set up Tailwind in React
               </h2>
             </div>
             <div className="col-sm-12 col-md-3">
@@ -405,40 +414,47 @@ const Resume = () => {
               </div>
             </div>
           </div>
+         </a>
 
-          <div className="row medium-highlight">
+         <a href="https://www.educative.io/edpresso/how-to-set-up-tailwind-in-react" className="article">
+         <div className="row medium-highlight">
             <div className="col-sm-12 col-md-2">
-              <p style={{ fontSize: "14px" }}>20th Jan</p>
+              <p style={{ fontSize: "14px" }}>30th Sep</p>
             </div>
             <div className="col-sm-12 col-md-7">
               <h2 style={{ fontSize: "20px", fontWeight: "600" }}>
                 <img src={ellipseII} alt="" />
-                &nbsp; How do you use time tracking for projects?
+                &nbsp; How to set up Tailwind in React
               </h2>
             </div>
             <div className="col-sm-12 col-md-3">
               <div className="text-right">
-               
+                
                 <i className="fa fa-arrow-up medium-icon"></i>
               </div>
             </div>
           </div>
-          <div className="row medium-highlight">
+         </a>
+
+         <a href="https://www.educative.io/edpresso/how-to-set-up-tailwind-in-react" className="article">
+         <div className="row medium-highlight">
             <div className="col-sm-12 col-md-2">
-              <p style={{ fontSize: "14px" }}>20th Jan</p>
+              <p style={{ fontSize: "14px" }}>30th Sep</p>
             </div>
             <div className="col-sm-12 col-md-7">
               <h2 style={{ fontSize: "20px", fontWeight: "600" }}>
                 <img src={ellipseII} alt="" />
-                &nbsp; How do you use time tracking for projects?
+                &nbsp; How to set up Tailwind in React
               </h2>
             </div>
             <div className="col-sm-12 col-md-3">
               <div className="text-right">
+                
                 <i className="fa fa-arrow-up medium-icon"></i>
               </div>
             </div>
           </div>
+         </a>
         </div>
       </section>
       <section className="contact">
