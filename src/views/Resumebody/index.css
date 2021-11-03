@@ -28,6 +28,10 @@
   position: absolute;
   left: 70px;
   top: 50px;
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 .intro-text h1 {
@@ -239,6 +243,14 @@ color: #ccd6f6;
 .footer h1 {
   font-size: 20px;
   line-height: 30px;
+}
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
 }
 @media only screen and (max-width: 1024px) {
   #top{

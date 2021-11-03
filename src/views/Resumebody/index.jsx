@@ -1,4 +1,4 @@
-import React from "react";
+import React ,{useState, useEffect} from "react";
 import NavBar from "../../component/NavBar/index";
 import "./index.css";
 import juliet from "../../assets/img/julietchime.png";
@@ -10,6 +10,43 @@ import "slick-carousel/slick/slick-theme.css";
 import ellipseII from "../../assets/img/Ellipse-21.png";
 
 const Resume = () => {
+  const [words,setWords] = useState(["I’ m a Frontend developer based in Lagos."]);
+  const [index, setIndex] = useState(0);
+  const [subIndex, setSubIndex] = useState(0);
+  const [blink, setBlink] = useState(true);
+  const [reverse, setReverse] = useState(false);
+
+  useEffect(() => {
+    if (index === words.length) return;
+
+    if ( subIndex === words[index].length + 1 && 
+        index !== words.length - 1 && !reverse ) {
+      setReverse(true);
+      return;
+    }
+
+    if (subIndex === 0 && reverse) {
+      setReverse(false);
+      setIndex((prev) => prev + 1);
+      return;
+    }
+
+    const timeout = setTimeout(() => {
+      setSubIndex((prev) => prev + (reverse ? -1 : 1));
+    }, Math.max(reverse ? 75 : subIndex === words[index].length ? 1000 :
+                150, parseInt(Math.random() * 350)));
+
+    return () => clearTimeout(timeout);
+  }, [subIndex, index, reverse]);
+
+  // blinker
+  useEffect(() => {
+    const timeout2 = setTimeout(() => {
+      setBlink((prev) => !prev);
+    }, 500);
+    return () => clearTimeout(timeout2);
+  }, [blink]);
+
   const settings = {
     dots: false,
     infinite: true,
@@ -115,7 +152,7 @@ const Resume = () => {
             </div>
             <div className="col-sm-12 col-md-4">
               <div class="funthing">
-                <h3>I’m a Frontend developer based in Lagos.</h3>
+                <h3>{`${words[index].substring(0, subIndex)}${blink ? "|" : " "}`}</h3>
                 <p>I like making fun and interactive things on the web</p>
                 <br />
                 <div className="getintouch-btn">
@@ -141,18 +178,12 @@ const Resume = () => {
                 About Me &nbsp; &nbsp; <img src={line} alt="" className="img-fluid"  />
               </h1>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
-                morbi eget hac nullam consectetur scelerisque turpis nibh. Neque
-                cursus lectus vel, nec amet elementum, rhoncus tellus. Lorem
-                ipsum dolor sit amet, consectetur adipiscing elit. Sit morbi
-                eget hac nullam consectetur scelerisque turpis nibh. Neque
-                cursus lectus vel, nec amet elementum, rhoncus tellus. Lorem
-                ipsum dolor sit amet, consectetur adipiscing elit. Sit morbi
-                eget hac nullam consectetur scelerisque turpis nibh. Neque
-                cursus lectus vel, nec amet elementum, rhoncus tellus. Lorem
-                ipsum dolor sit amet, consectetur adipiscing elit. Sit morbi
-                eget hac nullam consectetur scelerisque turpis nibh. Neque
-                cursus lectus vel.
+              I’m a Frontend Software Engineer based in Lagos Nigeria,specializing in the core frontend technologies HTML, CSS, Javascript, and web design frameworks and library. I create fun, innovative, accessible, and fast web applications with
+              over 2year hands-on experience 
+              doing UI engineering or developing the Frontend of
+               applications for startups and well-established organizations.<br/>
+                I'm a passionate problem solver and creative thinker and beyond Front-end Software Engineer coding chops, I’m also passionate about volunteering for the Developer's community. I really value the ability to not only perform development projects but also help others improve their craft because 
+                I’ve gained so much from others sharing their skills and knowledge.
               </p>
             </div>
           </div>
@@ -201,7 +232,7 @@ const Resume = () => {
                   <div className="project-slide">
                     <div className="d-flex justify-content-end">
                       <div className="somethings-I-built-icon">
-                        <a href="#">
+                        <a href="https://github.com/Juliet-chime/cookingrecipe">
                           {" "}
                           <i class="fa fa-github"></i>
                         </a>
@@ -215,22 +246,21 @@ const Resume = () => {
                     <br />
                     <br />
                     <br />
-                    <h1>GIGM Web 2.0</h1>
+                    <h1>Explore Dishes</h1>
                     <br />
                     <p className="pb-5">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Sit morbi eget hac nullam consectetur scelerisque turpis
-                      nibh.
+                    A React-based Food App, created with Edamam API that renders differnt dishes and its nutitional information based on user search. 
                     </p>
                     <span>HTML &nbsp;</span>
                     <span>CSS &nbsp;</span>
                     <span>JS &nbsp;</span>
+                    <span>ReactJS &nbsp;</span>
                   </div>
 
                   <div className="project-slide even-1">
                     <div className="d-flex justify-content-end">
                       <div className="somethings-I-built-icon">
-                        <a href="#">
+                        <a href="https://github.com/Juliet-chime/moviechill">
                           {" "}
                           <i class="fa fa-github"></i>
                         </a>
@@ -244,16 +274,15 @@ const Resume = () => {
                     <br />
                     <br />
                     <br />
-                    <h1>GIGM Web 2.0</h1>
+                    <h1>Movie Chill</h1>
                     <br />
                     <p className="pb-5">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Sit morbi eget hac nullam consectetur scelerisque turpis
-                      nibh.
+                    A React-based Movie App, created with OMDb API with the ability to add and remove movies from your favorites list. 
                     </p>
                     <span>HTML &nbsp;</span>
                     <span>CSS &nbsp;</span>
                     <span>JS &nbsp;</span>
+                    <span>ReactJS &nbsp;</span>
                   </div>
 
                   <div className="project-slide">
