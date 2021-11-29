@@ -45,7 +45,7 @@ const Resume = () => {
       setBlink((prev) => !prev);
     }, 500);
     return () => clearTimeout(timeout2);
-  }, [blink,words]);
+  }, [blink]);
 
   const settings = {
     dots: false,
@@ -221,9 +221,7 @@ const Resume = () => {
                     <h1>GIGM Web 2.0</h1>
                     <br />
                     <p className="pb-5">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Sit morbi eget hac nullam consectetur scelerisque turpis
-                      nibh.
+                      A revamp of GIGMobility to optimize the process of users booking experience across mutilpe platforms.
                     </p>
                     <span>HTML &nbsp;</span>
                     <span>CSS &nbsp;</span>
@@ -290,7 +288,7 @@ const Resume = () => {
                     <div className="d-flex justify-content-end">
                       <div className="somethings-I-built-icon">
                         {/* dummy link here */}
-                        <a href="https://github.com/Juliet-chime">
+                        <a href="https://github.com/Juliet-chime/TrustBanc">
                           {" "}
                           <i class="fa fa-github"></i>
                         </a>
@@ -304,16 +302,44 @@ const Resume = () => {
                     <br />
                     <br />
                     <br />
-                    <h1>GIGM Web 2.0</h1>
+                    <h1>TrustBanc</h1>
                     <br />
                     <p className="pb-5">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Sit morbi eget hac nullam consectetur scelerisque turpis
-                      nibh.
+                      A login application that enables users login and directs to another page showing the information gotten from the backend. 
                     </p>
                     <span>HTML &nbsp;</span>
                     <span>CSS &nbsp;</span>
                     <span>JS &nbsp;</span>
+                    <span>ReactJS &nbsp;</span>
+                  </div>
+
+                  <div className="project-slide">
+                    <div className="d-flex justify-content-end">
+                      <div className="somethings-I-built-icon">
+                        {/* dummy link here */}
+                        <a href="https://github.com/Juliet-chime/percentage-calculator">
+                          {" "}
+                          <i class="fa fa-github"></i>
+                        </a>
+                      </div>
+                      {/* <div className="somethings-I-built-icon">
+                        <a href="#">
+                          <i class="fa fa-edit"></i>
+                        </a>
+                      </div> */}
+                    </div>
+                    <br />
+                    <br />
+                    <br />
+                    <h1>Percentage Calculator</h1>
+                    <br />
+                    <p className="pb-5">
+                      An application that calculate percentage,the UI has glassmorphism layout
+                    </p>
+                    <span>HTML &nbsp;</span>
+                    <span>CSS &nbsp;</span>
+                    <span>JS &nbsp;</span>
+                    <span>React &nbsp;</span>
                   </div>
                 </Slider>
               </div>
