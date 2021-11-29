@@ -37,7 +37,7 @@ const Resume = () => {
                 150, parseInt(Math.random() * 350)));
 
     return () => clearTimeout(timeout);
-  }, [subIndex, index, reverse]);
+  }, [subIndex, index, reverse,words]);
 
   // blinker
   useEffect(() => {
