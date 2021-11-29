@@ -37,7 +37,8 @@ const Resume = () => {
                 150, parseInt(Math.random() * 350)));
 
     return () => clearTimeout(timeout);
-  }, [subIndex, index, reverse,words]);
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [subIndex, index, reverse]);
 
   // blinker
   useEffect(() => {
