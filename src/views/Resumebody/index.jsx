@@ -10,7 +10,7 @@ import "slick-carousel/slick/slick-theme.css";
 import ellipseII from "../../assets/img/Ellipse-21.png";
 
 const Resume = () => {
-  const words = ["I’ m a Frontend developer based in Lagos."];
+  const words = ["I’ m a Frontend developer based in Lagos, Nigeria."];
   const [index, setIndex] = useState(0);
   const [subIndex, setSubIndex] = useState(0);
   const [blink, setBlink] = useState(true);
@@ -182,7 +182,7 @@ const Resume = () => {
               I’m a Frontend Software Engineer based in Lagos Nigeria,specializing in the core frontend technologies HTML, CSS, Javascript, and web design frameworks and library. I create fun, innovative, accessible, and fast web applications with
               over 2year hands-on experience 
               doing UI engineering or developing the Frontend of
-               applications for startups and well-established organizations.<br/>
+               applications for startups and well-established organizations.<br/><br/>
                 I'm a passionate problem solver and creative thinker and beyond Front-end Software Engineer coding chops, I’m also passionate about volunteering for the Developer's community. I really value the ability to not only perform development projects but also help others improve their craft because 
                 I’ve gained so much from others sharing their skills and knowledge.
               </p>
