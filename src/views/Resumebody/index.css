@@ -80,6 +80,7 @@
 }
 .intro-icon li a {
   color: #ccd6f6;
+  font-size: 20px;
 }
 
 .funthing {
@@ -140,6 +141,16 @@
   padding: 20px 0;
 }
 
+.linktonetlify{
+ color: #ccd6f6;
+}
+
+.linktonetlify:hover{
+  cursor: pointer;
+  color:#ccd6f6 ;
+  text-shadow: none !important;
+  transform: scale(0.9);
+ }
 .project-slide {
   position: relative;
   max-width: 90%;
@@ -306,4 +317,8 @@ color: #ccd6f6;
   .intro {
     margin-top: 77px;
   }
+  /* .intro-icon li a {
+    color: #ccd6f6;
+    font-size: 20px;
+  } */
 }

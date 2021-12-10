@@ -51,10 +51,10 @@ const Resume = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 1000,
+    speed: 5000,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 3000,
     responsive: [
       {
@@ -202,7 +202,8 @@ const Resume = () => {
               <div className="projects">
                 <Slider {...settings}>
 
-                  <div className="project-slide even">
+                 <a href="https://gigmweb2-0.netlify.app" target="blank" className="linktonetlify">
+                 <div className="project-slide even">
                     <div className="d-flex justify-content-end">
                       <div className="somethings-I-built-icon">
                         {/* dummy link */}
@@ -228,7 +229,9 @@ const Resume = () => {
                     <span>CSS &nbsp;</span>
                     <span>JS &nbsp;</span>
                   </div>
+                 </a>
 
+                  <a href="https://analyzefood.netlify.app" target="blank" className="linktonetlify">
                   <div className="project-slide">
                     <div className="d-flex justify-content-end">
                       <div className="somethings-I-built-icon">
@@ -249,15 +252,17 @@ const Resume = () => {
                     <h1>Explore Dishes</h1>
                     <br />
                     <p className="pb-5">
-                    A React-based Food App, created with Edamam API that renders differnt dishes and its nutitional information based on user search. 
+                    A React-based Food App, created with Edamam API that renders different dishes and its nutitional information based on user search. 
                     </p>
                     <span>HTML &nbsp;</span>
                     <span>CSS &nbsp;</span>
                     <span>JS &nbsp;</span>
                     <span>ReactJS &nbsp;</span>
                   </div>
+                  </a>
 
-                  <div className="project-slide even-1">
+<a href="https://julietmovie.netlify.app" target="blank" className="linktonetlify">
+<div className="project-slide even-1">
                     <div className="d-flex justify-content-end">
                       <div className="somethings-I-built-icon">
                         <a href="https://github.com/Juliet-chime/moviechill">
@@ -284,8 +289,11 @@ const Resume = () => {
                     <span>JS &nbsp;</span>
                     <span>ReactJS &nbsp;</span>
                   </div>
+</a>
+                  
 
-                  <div className="project-slide">
+                 <a href="https://trustbancloginuser.netlify.app" target="blank" className="linktonetlify">
+                 <div className="project-slide">
                     <div className="d-flex justify-content-end">
                       <div className="somethings-I-built-icon">
                         {/* dummy link here */}
@@ -313,7 +321,9 @@ const Resume = () => {
                     <span>JS &nbsp;</span>
                     <span>ReactJS &nbsp;</span>
                   </div>
+                 </a>
 
+                  <a href="https://elegant-gates-67b1b3.netlify.app/" target="blank" className="linktonetlify">
                   <div className="project-slide">
                     <div className="d-flex justify-content-end">
                       <div className="somethings-I-built-icon">
@@ -342,6 +352,38 @@ const Resume = () => {
                     <span>JS &nbsp;</span>
                     <span>React &nbsp;</span>
                   </div>
+                  </a>
+
+                  <a href="https://objective-khorana-8e8784.netlify.app" target="blank" className="linktonetlify">
+                  <div className="project-slide">
+                    <div className="d-flex justify-content-end">
+                      <div className="somethings-I-built-icon">
+                        {/* dummy link here */}
+                        <a href="https://github.com/Juliet-chime/9jalove">
+                          {" "}
+                          <i class="fa fa-github"></i>
+                        </a>
+                      </div>
+                      {/* <div className="somethings-I-built-icon">
+                        <a href="#">
+                          <i class="fa fa-edit"></i>
+                        </a>
+                      </div> */}
+                    </div>
+                    <br />
+                    <br />
+                    <br />
+                    <h1>9ja Love</h1>
+                    <br />
+                    <p className="pb-5">
+                      A dating site created to find love, happiness and a soulmate
+                    </p>
+                    <span>HTML &nbsp;</span>
+                    <span>CSS &nbsp;</span>
+                    <span>JS &nbsp;</span>
+                    <span>React &nbsp;</span>
+                  </div>
+                  </a>
                 </Slider>
               </div>
             </div>
