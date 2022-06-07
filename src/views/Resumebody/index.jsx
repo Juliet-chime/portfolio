@@ -3,11 +3,14 @@ import NavBar from "../../component/NavBar/index";
 import "./index.css";
 import juliet from "../../assets/img/julietchime.png";
 import line from "../../assets/img/Line1.png";
-import line2 from "../../assets/img/Line2.png";
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import ellipseII from "../../assets/img/Ellipse-21.png";
+import ProjectDone from "../project";
+import MediumPost from "../mediumPost";
+import Contact from "../form";
+import WorkPlace from "../WorkPlace";
+import Skills from "../skills";
+import { motion } from "framer-motion";
 
 const Resume = () => {
   const words = ["I’ m a Frontend developer based in Lagos, Nigeria."];
@@ -48,49 +51,11 @@ const Resume = () => {
     return () => clearTimeout(timeout2);
   }, [blink]);
 
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 5000,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: false,
-        },
-      },
-      {
-        breakpoint: 960,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 490,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
+
+  const variants = {
+    visible: { opacity: 1 },
+    hidden: { opacity: 0 },
+  }
   return (
     <div id="top">
       <NavBar />
@@ -117,7 +82,7 @@ const Resume = () => {
                         rel="noreferrer"
                         href="https://github.com/Juliet-chime"
                       >
-                        <i class="fa fa-github"></i>
+                        <i className="fa fa-github"></i>
                       </a>
                     </li>
                     <li>
@@ -126,7 +91,7 @@ const Resume = () => {
                         rel="noreferrer"
                         href="https://www.linkedin.com/in/chime-juliet-somtochukwu/"
                       >
-                        <i class="fa fa-linkedin"></i>
+                        <i className="fa fa-linkedin"></i>
                       </a>
                     </li>
                     <li>
@@ -135,7 +100,7 @@ const Resume = () => {
                         rel="noreferrer"
                         href="https://twitter.com/speedysommy?s=09"
                       >
-                        <i class="fa fa-twitter"></i>
+                        <i className="fa fa-twitter"></i>
                       </a>
                     </li>
                     <li>
@@ -144,7 +109,7 @@ const Resume = () => {
                         rel="noreferrer"
                         href="https://web.facebook.com/chime.juli/"
                       >
-                        <i class="fa fa-facebook"></i>
+                        <i className="fa fa-facebook"></i>
                       </a>
                     </li>
                   </ul>
@@ -152,7 +117,7 @@ const Resume = () => {
               </div>
             </div>
             <div className="col-sm-12 col-md-4">
-              <div class="funthing">
+              <div className="funthing">
                 <h3>{`${words[index].substring(0, subIndex)}${blink ? "|" : " "}`}</h3>
                 <p>I like making fun and interactive things on the web</p>
                 <br />
@@ -170,6 +135,7 @@ const Resume = () => {
           </div>
         </div>
       </section>
+
       <section className="about pt-5 pb-5">
         <div className="container">
           <div className="row">
@@ -178,354 +144,29 @@ const Resume = () => {
               <h1 className="mb-2">
                 About Me &nbsp; &nbsp; <img src={line} alt="" className="img-fluid"  />
               </h1>
-              <p>
+              <motion.p
+  initial="hidden"
+  animate="visible"
+  variants={variants}
+  transition={{ duration: 5,}}>
               I’m a Frontend Software Engineer based in Lagos Nigeria,specializing in the core frontend technologies HTML, CSS, Javascript, and web design frameworks and library. I create fun, innovative, accessible, and fast web applications with
               over 2year hands-on experience 
               doing UI engineering or developing the Frontend of
                applications for startups and well-established organizations.<br/><br/>
                 I'm a passionate problem solver and creative thinker and beyond Front-end Software Engineer coding chops, I’m also passionate about volunteering for the Developer's community. I really value the ability to not only perform development projects but also help others improve their craft because 
                 I’ve gained so much from others sharing their skills and knowledge.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="about pt-5 pb-5">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12">
-              {/* <h1>Some things I’ve built</h1> */}
-              <h1 className="mb-2">
-                Some things I’ve built &nbsp; &nbsp; <img src={line2} alt="" className="img-fluid" />
-              </h1>
-
-              <div className="projects">
-                <Slider {...settings}>
-
-                 <a href="https://gigmweb2-0.netlify.app" target="blank" className="linktonetlify">
-                 <div className="project-slide even">
-                    <div className="d-flex justify-content-end">
-                      <div className="somethings-I-built-icon">
-                        {/* dummy link */}
-                        <a href="https://github.com/Juliet-chime">
-                          <i class="fa fa-github"></i>
-                        </a>
-                      </div>
-                      {/* <div className="somethings-I-built-icon">
-                        <a href="#">
-                          <i class="fa fa-edit"></i>
-                        </a>
-                      </div> */}
-                    </div>
-                    <br />
-                    <br />
-                    <br />
-                    <h1>GIGM Web 2.0</h1>
-                    <br />
-                    <p className="pb-5">
-                      A revamp of GIGMobility to optimize the process of users booking experience across mutilpe platforms.
-                    </p>
-                    <span>HTML &nbsp;</span>
-                    <span>CSS &nbsp;</span>
-                    <span>JS &nbsp;</span>
-                  </div>
-                 </a>
-
-                  <a href="https://analyzefood.netlify.app" target="blank" className="linktonetlify">
-                  <div className="project-slide">
-                    <div className="d-flex justify-content-end">
-                      <div className="somethings-I-built-icon">
-                        <a href="https://github.com/Juliet-chime/cookingrecipe">
-                          {" "}
-                          <i class="fa fa-github"></i>
-                        </a>
-                      </div>
-                      {/* <div className="somethings-I-built-icon">
-                        <a href="#">
-                          <i class="fa fa-edit"></i>
-                        </a>
-                      </div> */}
-                    </div>
-                    <br />
-                    <br />
-                    <br />
-                    <h1>Explore Dishes</h1>
-                    <br />
-                    <p className="pb-5">
-                    A React-based Food App, created with Edamam API that renders different dishes and its nutitional information based on user search. 
-                    </p>
-                    <span>HTML &nbsp;</span>
-                    <span>CSS &nbsp;</span>
-                    <span>JS &nbsp;</span>
-                    <span>ReactJS &nbsp;</span>
-                  </div>
-                  </a>
-
-<a href="https://julietmovie.netlify.app" target="blank" className="linktonetlify">
-<div className="project-slide even-1">
-                    <div className="d-flex justify-content-end">
-                      <div className="somethings-I-built-icon">
-                        <a href="https://github.com/Juliet-chime/moviechill">
-                          {" "}
-                          <i class="fa fa-github"></i>
-                        </a>
-                      </div>
-                      {/* <div className="somethings-I-built-icon">
-                        <a href="#">
-                          <i class="fa fa-edit"></i>
-                        </a>
-                      </div> */}
-                    </div>
-                    <br />
-                    <br />
-                    <br />
-                    <h1>Movie Chill</h1>
-                    <br />
-                    <p className="pb-5">
-                    A React-based Movie App, created with OMDb API with the ability to add and remove movies from your favorites list. 
-                    </p>
-                    <span>HTML &nbsp;</span>
-                    <span>CSS &nbsp;</span>
-                    <span>JS &nbsp;</span>
-                    <span>ReactJS &nbsp;</span>
-                  </div>
-</a>
-                  
-
-                 <a href="https://trustbancloginuser.netlify.app" target="blank" className="linktonetlify">
-                 <div className="project-slide">
-                    <div className="d-flex justify-content-end">
-                      <div className="somethings-I-built-icon">
-                        {/* dummy link here */}
-                        <a href="https://github.com/Juliet-chime/TrustBanc">
-                          {" "}
-                          <i class="fa fa-github"></i>
-                        </a>
-                      </div>
-                      {/* <div className="somethings-I-built-icon">
-                        <a href="#">
-                          <i class="fa fa-edit"></i>
-                        </a>
-                      </div> */}
-                    </div>
-                    <br />
-                    <br />
-                    <br />
-                    <h1>TrustBanc</h1>
-                    <br />
-                    <p className="pb-5">
-                      A login application that enables users login and directs to another page showing the information gotten from the backend. 
-                    </p>
-                    <span>HTML &nbsp;</span>
-                    <span>CSS &nbsp;</span>
-                    <span>JS &nbsp;</span>
-                    <span>ReactJS &nbsp;</span>
-                  </div>
-                 </a>
-
-                  <a href="https://elegant-gates-67b1b3.netlify.app/" target="blank" className="linktonetlify">
-                  <div className="project-slide">
-                    <div className="d-flex justify-content-end">
-                      <div className="somethings-I-built-icon">
-                        {/* dummy link here */}
-                        <a href="https://github.com/Juliet-chime/percentage-calculator">
-                          {" "}
-                          <i class="fa fa-github"></i>
-                        </a>
-                      </div>
-                      {/* <div className="somethings-I-built-icon">
-                        <a href="#">
-                          <i class="fa fa-edit"></i>
-                        </a>
-                      </div> */}
-                    </div>
-                    <br />
-                    <br />
-                    <br />
-                    <h1>Percentage Calculator</h1>
-                    <br />
-                    <p className="pb-5">
-                      An application that calculate percentage,the UI has glassmorphism layout
-                    </p>
-                    <span>HTML &nbsp;</span>
-                    <span>CSS &nbsp;</span>
-                    <span>JS &nbsp;</span>
-                    <span>React &nbsp;</span>
-                  </div>
-                  </a>
-
-                  <a href="https://objective-khorana-8e8784.netlify.app" target="blank" className="linktonetlify">
-                  <div className="project-slide">
-                    <div className="d-flex justify-content-end">
-                      <div className="somethings-I-built-icon">
-                        {/* dummy link here */}
-                        <a href="https://github.com/Juliet-chime/9jalove">
-                          {" "}
-                          <i class="fa fa-github"></i>
-                        </a>
-                      </div>
-                      {/* <div className="somethings-I-built-icon">
-                        <a href="#">
-                          <i class="fa fa-edit"></i>
-                        </a>
-                      </div> */}
-                    </div>
-                    <br />
-                    <br />
-                    <br />
-                    <h1>9ja Love</h1>
-                    <br />
-                    <p className="pb-5">
-                      A dating site created to find love, happiness and a soulmate
-                    </p>
-                    <span>HTML &nbsp;</span>
-                    <span>CSS &nbsp;</span>
-                    <span>JS &nbsp;</span>
-                    <span>React &nbsp;</span>
-                  </div>
-                  </a>
-                </Slider>
-              </div>
+              </motion.p>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="medium pt-5 pb-5">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12">
-              <h2>What’s new?</h2>
-              <br />
-              {/* <h1>Recent Posts on Medium</h1> */}
-              <h1 className="mb-2">
-                Recent Posts on Medium &nbsp; &nbsp; <img src={line2} alt="" className="img-fluid" />
-              </h1>
-            </div>
-          </div>
-          <br />
-
-         <a href="https://www.educative.io/edpresso/how-to-set-up-tailwind-in-react" className="article">
-         <div className="row medium-highlight">
-            <div className="col-sm-12 col-md-2">
-              <p style={{ fontSize: "14px" }}>30th Sep</p>
-            </div>
-            <div className="col-sm-12 col-md-7">
-              <h2 style={{ fontSize: "20px", fontWeight: "600" }}>
-                <img src={ellipseII} alt="" />
-                &nbsp; How to set up Tailwind in React
-              </h2>
-            </div>
-            <div className="col-sm-12 col-md-3">
-              <div className="text-right">
-                
-                <i className="fa fa-arrow-up medium-icon"></i>
-              </div>
-            </div>
-          </div>
-         </a>
-
-         <a href="https://www.educative.io/edpresso/how-to-set-up-tailwind-in-react" className="article">
-         <div className="row medium-highlight">
-            <div className="col-sm-12 col-md-2">
-              <p style={{ fontSize: "14px" }}>30th Sep</p>
-            </div>
-            <div className="col-sm-12 col-md-7">
-              <h2 style={{ fontSize: "20px", fontWeight: "600" }}>
-                <img src={ellipseII} alt="" />
-                &nbsp; How to set up Tailwind in React
-              </h2>
-            </div>
-            <div className="col-sm-12 col-md-3">
-              <div className="text-right">
-                
-                <i className="fa fa-arrow-up medium-icon"></i>
-              </div>
-            </div>
-          </div>
-         </a>
-
-         <a href="https://www.educative.io/edpresso/how-to-set-up-tailwind-in-react" className="article">
-         <div className="row medium-highlight">
-            <div className="col-sm-12 col-md-2">
-              <p style={{ fontSize: "14px" }}>30th Sep</p>
-            </div>
-            <div className="col-sm-12 col-md-7">
-              <h2 style={{ fontSize: "20px", fontWeight: "600" }}>
-                <img src={ellipseII} alt="" />
-                &nbsp; How to set up Tailwind in React
-              </h2>
-            </div>
-            <div className="col-sm-12 col-md-3">
-              <div className="text-right">
-                
-                <i className="fa fa-arrow-up medium-icon"></i>
-              </div>
-            </div>
-          </div>
-         </a>
-
-         <a href="https://www.educative.io/edpresso/how-to-set-up-tailwind-in-react" className="article">
-         <div className="row medium-highlight">
-            <div className="col-sm-12 col-md-2">
-              <p style={{ fontSize: "14px" }}>30th Sep</p>
-            </div>
-            <div className="col-sm-12 col-md-7">
-              <h2 style={{ fontSize: "20px", fontWeight: "600" }}>
-                <img src={ellipseII} alt="" />
-                &nbsp; How to set up Tailwind in React
-              </h2>
-            </div>
-            <div className="col-sm-12 col-md-3">
-              <div className="text-right">
-                
-                <i className="fa fa-arrow-up medium-icon"></i>
-              </div>
-            </div>
-          </div>
-         </a>
-
-         <a href="https://www.educative.io/edpresso/how-to-set-up-tailwind-in-react" className="article">
-         <div className="row medium-highlight">
-            <div className="col-sm-12 col-md-2">
-              <p style={{ fontSize: "14px" }}>30th Sep</p>
-            </div>
-            <div className="col-sm-12 col-md-7">
-              <h2 style={{ fontSize: "20px", fontWeight: "600" }}>
-                <img src={ellipseII} alt="" />
-                &nbsp; How to set up Tailwind in React
-              </h2>
-            </div>
-            <div className="col-sm-12 col-md-3">
-              <div className="text-right">
-                
-                <i className="fa fa-arrow-up medium-icon"></i>
-              </div>
-            </div>
-          </div>
-         </a>
-
-         <a href="https://www.educative.io/edpresso/how-to-set-up-tailwind-in-react" className="article">
-         <div className="row medium-highlight">
-            <div className="col-sm-12 col-md-2">
-              <p style={{ fontSize: "14px" }}>30th Sep</p>
-            </div>
-            <div className="col-sm-12 col-md-7">
-              <h2 style={{ fontSize: "20px", fontWeight: "600" }}>
-                <img src={ellipseII} alt="" />
-                &nbsp; How to set up Tailwind in React
-              </h2>
-            </div>
-            <div className="col-sm-12 col-md-3">
-              <div className="text-right">
-                
-                <i className="fa fa-arrow-up medium-icon"></i>
-              </div>
-            </div>
-          </div>
-         </a>
-        </div>
-      </section>
+      <Skills/>
+      <WorkPlace/>
+      <ProjectDone/>
+      <MediumPost/>
+      <Contact/>
+     
       <section className="contact">
         <div className="container">
           <div className="row">
