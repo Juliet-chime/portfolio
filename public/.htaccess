@@ -1,0 +1,20 @@
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://julietsomtochukwuchime.com/$1 [R=301,L]
+
+<!-- 
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /subdirectory
+    RewriteRule ^https://julietsomtochukwuchime.com$ - [L]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-l
+    RewriteRule . /index.html [L]
+</IfModule> -->
+
+<!-- RewriteEngine On
+RewriteCond %{SERVER_PORT} 80 -->
+
+<!-- RewriteCond %{REQUEST_FILENAME} !-f -->
+<!-- RewriteRule ^(.*)$ https://julietsomtochukwuchime.com/$1 [R=301,L] -->
