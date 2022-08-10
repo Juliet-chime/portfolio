@@ -26,7 +26,7 @@ const WorkPlace = () => {
   animate="visible"
   variants={variants}
   transition={{ duration: 5,}}>I have experience working for some these brands which has contributed to my career growth, skills and knowlegde . On a team, I tend to help bring out a clearer sense of purpose and encourage clearer communication, resulting in better team results and a higher sense of satisfaction for all involved.</motion.p>
-          <a href="https://www.linkedin.com/in/chime-juliet-somtochukwu/">
+          <a href="https://www.linkedin.com/in/chime-juliet-somtochukwu/" target="_blank">
        <button className="brand-button">Hire Me</button>
        </a>
         </div>

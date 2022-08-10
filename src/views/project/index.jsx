@@ -70,7 +70,7 @@ const ProjectDone = () => {
                 <div className="d-flex justify-content-end">
                   <div className="somethings-I-built-icon">
                     {/* dummy link */}
-                    <a href="https://github.com/Juliet-chime">
+                    <a href="https://github.com/Juliet-chime"  target="_blank">
                       <i className="fa fa-github"></i>
                     </a>
                   </div>
@@ -101,7 +101,7 @@ const ProjectDone = () => {
                 <div className="d-flex justify-content-end">
                   <div className="somethings-I-built-icon">
                     {/* dummy link */}
-                    <a href="https://github.com/Juliet-chime">
+                    <a href="https://github.com/Juliet-chime"  target="_blank">
                       <i className="fa fa-github"></i>
                     </a>
                   </div>
@@ -126,13 +126,44 @@ const ProjectDone = () => {
               </div>
              </a>
 
+             <a href="https://synfuchiondashboard.netlify.app/" target="_blank"  rel="noreferrer" className="linktonetlify">
+             <div className="project-slide even">
+                <div className="d-flex justify-content-end">
+                  <div className="somethings-I-built-icon">
+                    {/* dummy link */}
+                    <a href="https://github.com/Juliet-chime/sycfuchiondashboard" target="_blank">
+                      <i className="fa fa-github"></i>
+                    </a>
+                  </div>
+                  {/* <div className="somethings-I-built-icon">
+                    <a href="#">
+                      <i class="fa fa-edit"></i>
+                    </a>
+                  </div> */}
+                </div>
+                <br />
+                <br />
+                <br />
+                <h1>Ecommerce dashboard using Sycfuchion</h1>
+                <br />
+                <p className="pb-5">
+              Ecommerce Dashboard that displays business analytics in different format.
+                </p>
+                <span>HTML &nbsp;</span>
+                <span>CSS &nbsp;</span>
+                <span>JS &nbsp;</span>
+                <span>React &nbsp;</span>
+                <span>Sycfusion &nbsp;</span>
+              </div>
+             </a>
+
              
              <a href="https://cryptotiding.netlify.app/"  target="_blank"  rel="noreferrer" className="linktonetlify">
              <div className="project-slide even">
                 <div className="d-flex justify-content-end">
                   <div className="somethings-I-built-icon">
                     {/* dummy link */}
-                    <a href="https://github.com/Juliet-chime">
+                    <a href="https://github.com/Juliet-chime/cryptoapp"  target="_blank">
                       <i className="fa fa-github"></i>
                     </a>
                   </div>
@@ -162,7 +193,7 @@ const ProjectDone = () => {
               <div className="project-slide">
                 <div className="d-flex justify-content-end">
                   <div className="somethings-I-built-icon">
-                    <a href="https://github.com/Juliet-chime/cookingrecipe">
+                    <a href="https://github.com/Juliet-chime/cookingrecipe" target="_blank">
                       {" "}
                       <i className="fa fa-github"></i>
                     </a>
@@ -192,7 +223,7 @@ const ProjectDone = () => {
 <div className="project-slide even-1">
                 <div className="d-flex justify-content-end">
                   <div className="somethings-I-built-icon">
-                    <a href="https://github.com/Juliet-chime/moviechill">
+                    <a href="https://github.com/Juliet-chime/moviechill" target="_blank">
                       {" "}
                       <i className="fa fa-github"></i>
                     </a>
@@ -224,7 +255,7 @@ const ProjectDone = () => {
                 <div className="d-flex justify-content-end">
                   <div className="somethings-I-built-icon">
                     {/* dummy link here */}
-                    <a href="https://github.com/Juliet-chime/TrustBanc">
+                    <a href="https://github.com/Juliet-chime/TrustBanc" target="_blank">
                       {" "}
                       <i className="fa fa-github"></i>
                     </a>
@@ -255,7 +286,7 @@ const ProjectDone = () => {
                 <div className="d-flex justify-content-end">
                   <div className="somethings-I-built-icon">
                     {/* dummy link here */}
-                    <a href="https://github.com/Juliet-chime/percentage-calculator">
+                    <a href="https://github.com/Juliet-chime/percentage-calculator" target="_blank">
                       {" "}
                       <i className="fa fa-github"></i>
                     </a>
@@ -286,7 +317,7 @@ const ProjectDone = () => {
                 <div className="d-flex justify-content-end">
                   <div className="somethings-I-built-icon">
                     {/* dummy link here */}
-                    <a href="https://github.com/Juliet-chime/9jalove">
+                    <a href="https://github.com/Juliet-chime/9jalove" target="_blank">
                       {" "}
                       <i className="fa fa-github"></i>
                     </a>

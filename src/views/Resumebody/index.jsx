@@ -186,7 +186,7 @@ const Resume = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-12 text-center">
-              <h1>2021 Somtochuku Juliet</h1>
+              <h1>2021 Somtochukwu Juliet</h1>
             </div>
           </div>
         </div>

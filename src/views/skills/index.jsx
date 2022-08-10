@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import resume from "./resume.pdf.pdf"
+import resume from "./resume1.pdf.pdf"
 
 const Skills = () => {
 
@@ -12,7 +12,7 @@ const Skills = () => {
       </span>
       <span>Services</span>
       <a href={resume} target="_blank"  rel="noreferrer" download>
-   <button className="brand-button">Download CV</button>
+   <button className="brand-button" style={{color:"white"}}>Download CV</button>
    </a>
     </div>
 
