@@ -70,7 +70,7 @@ const ProjectDone = () => {
                 <div className="d-flex justify-content-end">
                   <div className="somethings-I-built-icon">
                     {/* dummy link */}
-                    <a href="https://github.com/Juliet-chime"  target="_blank">
+                    <a href="https://github.com/Juliet-chime"  target="_blank" rel="noreferrer">
                       <i className="fa fa-github"></i>
                     </a>
                   </div>
@@ -101,7 +101,7 @@ const ProjectDone = () => {
                 <div className="d-flex justify-content-end">
                   <div className="somethings-I-built-icon">
                     {/* dummy link */}
-                    <a href="https://github.com/Juliet-chime"  target="_blank">
+                    <a href="https://github.com/Juliet-chime"  target="_blank" rel="noreferrer">
                       <i className="fa fa-github"></i>
                     </a>
                   </div>
@@ -131,7 +131,7 @@ const ProjectDone = () => {
                 <div className="d-flex justify-content-end">
                   <div className="somethings-I-built-icon">
                     {/* dummy link */}
-                    <a href="https://github.com/Juliet-chime/sycfuchiondashboard" target="_blank">
+                    <a href="https://github.com/Juliet-chime/sycfuchiondashboard" target="_blank" rel="noreferrer">
                       <i className="fa fa-github"></i>
                     </a>
                   </div>
@@ -163,7 +163,7 @@ const ProjectDone = () => {
                 <div className="d-flex justify-content-end">
                   <div className="somethings-I-built-icon">
                     {/* dummy link */}
-                    <a href="https://github.com/Juliet-chime/cryptoapp"  target="_blank">
+                    <a href="https://github.com/Juliet-chime/cryptoapp"  target="_blank" rel="noreferrer">
                       <i className="fa fa-github"></i>
                     </a>
                   </div>
@@ -193,7 +193,7 @@ const ProjectDone = () => {
               <div className="project-slide">
                 <div className="d-flex justify-content-end">
                   <div className="somethings-I-built-icon">
-                    <a href="https://github.com/Juliet-chime/cookingrecipe" target="_blank">
+                    <a href="https://github.com/Juliet-chime/cookingrecipe" target="_blank" rel="noreferrer">
                       {" "}
                       <i className="fa fa-github"></i>
                     </a>
@@ -223,7 +223,7 @@ const ProjectDone = () => {
 <div className="project-slide even-1">
                 <div className="d-flex justify-content-end">
                   <div className="somethings-I-built-icon">
-                    <a href="https://github.com/Juliet-chime/moviechill" target="_blank">
+                    <a href="https://github.com/Juliet-chime/moviechill" target="_blank" rel="noreferrer">
                       {" "}
                       <i className="fa fa-github"></i>
                     </a>
@@ -255,7 +255,7 @@ const ProjectDone = () => {
                 <div className="d-flex justify-content-end">
                   <div className="somethings-I-built-icon">
                     {/* dummy link here */}
-                    <a href="https://github.com/Juliet-chime/TrustBanc" target="_blank">
+                    <a href="https://github.com/Juliet-chime/TrustBanc" target="_blank" rel="noreferrer">
                       {" "}
                       <i className="fa fa-github"></i>
                     </a>
@@ -286,7 +286,7 @@ const ProjectDone = () => {
                 <div className="d-flex justify-content-end">
                   <div className="somethings-I-built-icon">
                     {/* dummy link here */}
-                    <a href="https://github.com/Juliet-chime/percentage-calculator" target="_blank">
+                    <a href="https://github.com/Juliet-chime/percentage-calculator" target="_blank" rel="noreferrer">
                       {" "}
                       <i className="fa fa-github"></i>
                     </a>
@@ -317,7 +317,7 @@ const ProjectDone = () => {
                 <div className="d-flex justify-content-end">
                   <div className="somethings-I-built-icon">
                     {/* dummy link here */}
-                    <a href="https://github.com/Juliet-chime/9jalove" target="_blank">
+                    <a href="https://github.com/Juliet-chime/9jalove" target="_blank" rel="noreferrer">
                       {" "}
                       <i className="fa fa-github"></i>
                     </a>
